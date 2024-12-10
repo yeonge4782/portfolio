@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav {
+    display: flex; 
+    justify-content: center; 
+    gap: 20rem; 
+}
+
+header nav a {
+    text-decoration: none;
+    font-weight: normal;
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+a {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+body {
+    font-family: "Noto Sans", sans-serif;
+}
+
+div.year {
+    color: white;
+    font-size: 2.5rem;
+    text-align: end;
+    margin-right: 4rem;
+   line-height: 1rem;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+div.title{
+    color: white;
+    font-size: 7rem;
+    text-align: end;
+    margin-right: 3rem;
+    padding: 0;
+     font-family:'Noto Sans KR', sans-serif;
+
+}
+h1{
+    margin:0;
+    position: relative;
+    overflow: hidden;
+    animation: slide-in 0.5s ease-out forwards; 
+}
+
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0); 
+    }
+}
+
+div.container {
+    display: flex;
+    flex-direction: row;
+    gap: 8rem;
+    margin: 50px 3rem;
+}
+
+.container li {
+    flex-grow: 1;
+    flex-basis: 0;
+    font-size: 1rem;
+    margin-top: 2rem;
+    text-align: left;
+}
+
+.container ul {
+    color: rgba(255, 255, 255, 0.415);
+    list-style-type: none;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+div.name {
+    color: white;
+    text-align: end;
+    font-size: 3rem;
+    margin-right: 4rem;
+    margin-top: 0;
+  
+}
+
+
+@media screen and (max-width: 1024px) {
+    header nav {
+        display: flex;
+        justify-content: center;
+        gap: 10rem;
+    }
+     div.year {
+        font-size: 2rem;
+        text-align: right;
+        margin-right: 2rem;
+        padding-top: 4rem;
+    }
+
+    div.title {
+        font-size: 5rem;
+        text-align: right;
+        margin-right: 2rem;
+        
+    }
+
+    div.container {
+        flex-direction: column; 
+        gap: 4rem;
+        margin:1rem 2rem;
+    }
+
+    .container ul {
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+    }
+
+    div.name {
+        text-align: right;
+        margin-right: 2rem;
+        margin-top: 6rem;
+        font-size: 2.5rem;
+    }
+}
+
+
+@media screen and (max-width: 639px) {
+    header {
+        text-align: center;
+        padding: 10px 0;
+    }
+    header nav {
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    header nav a {
+       
+        font-size: 1.5rem;
+    }
+
+    div.year {
+        font-size: 1.8rem;
+        margin-right: 2rem;
+        padding-top: 2rem;
+        text-align: end;
+    }
+
+    div.title {
+        font-size: 3rem;
+        text-align: end;
+        
+        padding: 0;
+      
+        
+    }
+
+    div.container {
+        flex-direction: column;
+        gap: 2rem;
+        margin: 20px 1rem;
+    }
+
+    .container ul {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        text-align: start; 
+    }
+
+    div.name {
+        text-align:end;
+        font-size: 2rem;
+    }
+}
